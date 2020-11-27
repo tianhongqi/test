@@ -15,10 +15,7 @@ pipeline {
           sleep 1
         }
 
-        ws(dir: '/home/jenkins') {
-          junit 'de'
-        }
-
+        ws(dir: '/home/jenkins')
       }
     }
 
