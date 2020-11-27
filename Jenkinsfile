@@ -8,5 +8,23 @@ pipeline {
       }
     }
 
+    stage('dd') {
+      steps {
+        echo 'ea'
+        retry(count: 1) {
+          sleep 1
+        }
+
+        ws(dir: '/home/jenkins') {
+          junit 'de'
+          warnError(message: 'eee', catchInterruptions: true) {
+            writeFile(file: 'et', text: 'a', encoding: 'utf-8')
+          }
+
+        }
+
+      }
+    }
+
   }
 }
