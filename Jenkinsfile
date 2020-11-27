@@ -15,7 +15,10 @@ pipeline {
           sleep 1
         }
 
-        ws(dir: '/home/jenkins')
+        ws(dir: '/home/jenkins') {
+          sh 'echo "aaa"'
+        }
+
       }
     }
 
