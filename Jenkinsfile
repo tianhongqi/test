@@ -17,10 +17,6 @@ pipeline {
 
         ws(dir: '/home/jenkins') {
           junit 'de'
-          warnError(message: 'eee', catchInterruptions: true) {
-            writeFile(file: 'et', text: 'a', encoding: 'utf-8')
-          }
-
         }
 
       }
