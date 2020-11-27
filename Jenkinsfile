@@ -1,11 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh 'echo "aa"'
       }
     }
 
+  }
+  environment {
+    user = 'thq'
   }
 }
